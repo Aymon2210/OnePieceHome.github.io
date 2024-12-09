@@ -1,0 +1,122 @@
+/* General body styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #eaf6ff; /* Light blue for the ocean theme */
+}
+
+/* Header */
+.header {
+    background-color: #005f99; /* Deep blue resembling the ocean */
+    text-align: center;
+    padding: 20px 0;
+    color: white;
+}
+.header #logo img {
+    max-height: 60px; /* Adjusted to prevent oversized logos */
+}
+.header ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #ffcc00; /* Gold reminiscent of treasure */
+}
+.header ul a {
+    display: inline-block;
+    padding: 14px 20px;
+    color: #000; /* Black text for contrast */
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.header ul a:hover {
+    background-color: #005f99; /* Match the header blue */
+    color: white;
+}
+
+/* Main Content */
+.content {
+    max-width: 960px;
+    margin: 40px auto;
+    background-color: white;
+    padding: 20px;
+    border: 2px solid #005f99;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.content h1 {
+    font-size: 2.5em;
+    color: #005f99;
+    text-align: center;
+}
+.content p {
+    color: #333;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+.content ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    margin: 20px 0;
+    list-style: none;
+}
+.content ul li {
+    margin: 10px;
+    width: 150px;
+    text-align: center;
+}
+.content ul li img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 2px solid #ffcc00; /* Gold frame for character images */
+}
+
+/* Footer */
+footer {
+    background-color: #005f99;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+footer p {
+    font-size: 1em;
+}
+
+/* Button Styles */
+button {
+    background-color: #ffcc00;
+    color: #000;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+button:hover {
+    background-color: #ff9900; /* Brighter yellow for hover */
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .content ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .header ul {
+        flex-wrap: wrap;
+    }
+    .header ul a {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+}
